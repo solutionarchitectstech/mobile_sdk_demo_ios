@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.6.1)
+  - SAAdvertisingSDK (0.0.2):
+    - Alamofire
+
+DEPENDENCIES:
+  - SAAdvertisingSDK (~> 0.0.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SAAdvertisingSDK
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  SAAdvertisingSDK: e5efe310b9efc4fc3b432f83ce132e2e3545e84b
+
+PODFILE CHECKSUM: f27fe4f9510947bdf98833809aa8aac726fcd707
+
+COCOAPODS: 1.11.3
