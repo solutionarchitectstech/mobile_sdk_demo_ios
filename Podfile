@@ -3,7 +3,6 @@ use_frameworks!
 platform :ios, '14.0'
 
 target 'SAAdvertisingSDK_Example' do
-   # pod 'SAAdvertisingSDK', :path => '../'
  pod 'SAAdvertisingSDK', '~> 0.0.2'
 
   target 'SAAdvertisingSDK_Tests' do
