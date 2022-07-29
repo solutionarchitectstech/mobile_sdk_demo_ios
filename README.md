@@ -34,8 +34,9 @@ TechAdvertising.initialize(storeUrl: String,
 ```
 [Look at the example here](https://github.com/solutionarchitectstech/mobile_sdk_demo_ios/blob/8ef656d56fda0384b92aedecfe7347363a90f8bc/SAAdvertisingSDK/AppDelegate.swift#L18)
 
-## 3. how to init a banner view
+## 3. banner view and the fullscreen mode
 ![banner-view](/readme_content/banner.gif)
+![fullscreen](/readme_content/fullscreen.gif)
 
 ```swift
  @IBOutlet weak var bannerView: BannerView!
