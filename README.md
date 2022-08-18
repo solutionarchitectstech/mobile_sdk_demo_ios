@@ -43,7 +43,7 @@ TechAdvertising.initialize(storeUrl: String,
  bannerView.loadData(model: BannerModel(
                 refresh: 0,
                 timeout: 0,
-                placementId: 4477551,
+                placementId: "4477551",
                 closeButtonType: CloseButtonType.COUNTDOWN,
                 sizes: [Size(width: 300, height: 250)]
         ))
