@@ -16,27 +16,36 @@ class SDKBannerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        bannerView.loadData(model: BannerModel(
+        bannerView.loadData(bannerModel: BannerModel(
                 refresh: 0,
                 timeout: 0,
-                placementId: 4477551,
+                placementId: "1",
                 closeButtonType: CloseButtonType.COUNTDOWN,
                 sizes: [Size(width: 300, height: 250)]
         ))
-        bannerView.onClose = { [weak self] in
-            self?.dismiss(animated: true)
-        }
+        bannerView.delegate = self
+    }
+}
+
+extension SDKBannerViewController: BannerViewDelegate {
+    public func onLoadDataSuccess(placementId: String) {
+        print("onLoadDataSuccess: \(placementId)")
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    public func onLoadDataFail(placementId: String, reason: String) {
+        print("onLoadDataFail: \(placementId), reason: \(reason)")
     }
-    */
 
+    public func onLoadWebContentSuccess(placementId: String) {
+        print("onLoadWebContentSuccess: \(placementId)")
+    }
+
+    public func onLoadWebContentFail(placementId: String, reason: String) {
+        print("onLoadWebContentFail: \(placementId), reason: \(reason)")
+    }
+
+    public func onCloseClick(placementId: String) {
+        print("onCloseClick: \(placementId)")
+        dismiss(animated: true)
+    }
 }

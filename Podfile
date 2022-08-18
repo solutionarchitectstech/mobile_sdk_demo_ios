@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '14.0'
 
 target 'SAAdvertisingSDK_Example' do
- pod 'SAAdvertisingSDK', '~> 0.0.2'
+ pod 'SAAdvertisingSDK', '~> 0.0.6'
 
   target 'SAAdvertisingSDK_Tests' do
     inherit! :search_paths
