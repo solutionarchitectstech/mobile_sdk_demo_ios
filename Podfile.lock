@@ -1,20 +1,45 @@
 PODS:
-  - Alamofire (5.6.1)
-  - SAAdvertisingSDK (0.0.2):
+  - Alamofire (5.6.2)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SAAdvertisingSDK (0.0.8):
     - Alamofire
+    - SATrackingSDK (= 1.1.2)
+  - SATrackingSDK (1.1.2):
+    - Moya/RxSwift
+    - RxCocoa
 
 DEPENDENCIES:
-  - SAAdvertisingSDK (~> 0.0.2)
+  - SAAdvertisingSDK (~> 0.0.8)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SAAdvertisingSDK
+    - SATrackingSDK
 
 SPEC CHECKSUMS:
-  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
-  SAAdvertisingSDK: e5efe310b9efc4fc3b432f83ce132e2e3545e84b
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SAAdvertisingSDK: 3e9de8c2b1855640ea7e9ec27d7cc15ac1b61d9f
+  SATrackingSDK: 858327db4f2d59f8569a2fec09d8ff10a7e733e2
 
-PODFILE CHECKSUM: f27fe4f9510947bdf98833809aa8aac726fcd707
+PODFILE CHECKSUM: 02b2d4bda28471bac68afe6fcf62f7a86f1fdeba
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.11.2

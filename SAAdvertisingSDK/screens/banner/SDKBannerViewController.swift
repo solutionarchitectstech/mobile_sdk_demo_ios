@@ -20,7 +20,7 @@ class SDKBannerViewController: UIViewController {
                 refresh: 0,
                 timeout: 0,
                 placementId: "1",
-                closeButtonType: CloseButtonType.COUNTDOWN,
+                closeButtonType: CloseButtonType.VISIBLE,
                 sizes: [Size(width: 300, height: 250)]
         ))
         bannerView.delegate = self

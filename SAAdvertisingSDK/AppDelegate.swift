@@ -18,10 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         TechAdvertising.initialize(storeUrl: "",
-                apiKey: "",
-                apiSecret: "",
-                partnerId: "",
-                uid: "")
+                apiKey: "key",
+                apiSecret: "secret",
+                partnerId: "1",
+                uid: "uid@google.com",
+                baseUrl: "https://<BANNER_END_POINT>",
+                trackingSdkBaseUrl: "https://<TRACKING_END_POINT>",
+                debugMode: true)
         // Override point for customization after application launch.
         return true
     }
